@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(78, 160, 132);
+}
+
+.part{
+color: rgb(189, 32, 32);
+cursor: pointer;
+/* text-align: center;  */
+
+}
+.Part1{
+    
+    text-align: center; 
+    
+    }
+
+.Part:hover{
+    
+    background-color: rgb(204, 190, 190) ;
+    }
+
+
+.parent{
+    /* display: flex; */
+    display: flex;
+    align-items: center;
+}  
+
+.childe_cxrili1{
+    /* border: 1px solid rgb(0, 81, 255); */
+    width: 30vw;
+    height: 25vw;
+}
+
+.cxrili_cha1{
+    background-color: rgb(49, 96, 80);
+}
+
+.cxrili_cha:hover{
+    background-color: rgb(42, 92, 92);
+    color: white;
+    cursor: pointer;
+}
+
+.data_parent{
+    display: flex;
+    /* align-content: center; */
+    /* display: flex; */
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 99vw;
+    height: auto;
+   
+    margin-top: 1%;
+   
+    
+  /* grid-template-columns: auto auto auto;
+  background-color: aquamarine; */
+  
+}
+
+.child1{
+   
+    width: 50vw;
+    height: 20vh;
+    
+}
+
+.child2{
+    
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid black;
+   
+    margin-left: 25%;
+
+}
+
+
+
+
+
+.finder_tp{
+    /* border: 1px solid black; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+
+.data_parent1:hover{
+    background-color: aqua;
+    /* font-size: large; */
+    text-align: center;
+    border: 3px solid rgb(203, 34, 34);
+    }
+
+ table,td,th{
+    border: 2px solid   black;
+    
+ }   
+
+
+.child2{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+.child1{
+    
+    background-color: aquamarine;
+}
+

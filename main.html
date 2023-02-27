@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        body{
+          background-color: aqua;
+          }
+
+        .parent{
+            /* border: 2px solid black; */
+            display: flex;
+            background-color: rgb(79, 160, 160);
+            height: 10vh;
+        }  
+        .child1{
+            /* border: 2px solid black; */
+            width: 33.3vw;
+        }
+        .child2{
+            /* border: 2px solid black; */
+            width: 33.3vw;
+        }
+        .child3{
+            /* border: 2px solid black; */
+            width: 33.3vw;
+        }
+        .zieba{
+          margin-left: 27%;   
+          margin-top: 20px;     
+        }
+        #sql1{
+          cursor: pointer;
+          border: 2px solid rgb(95, 11, 11);
+          text-align: center;
+          
+           }   
+           
+           #sql1:hover{
+          color: white;
+          background-color: rgb(17, 77, 77);
+           }  
+           
+    .but{
+        visibility: hidden;
+    }       
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"> <input class="zieba" type="text"> <br><a class="link" href="gio"></a> </div>
+        <div class="child3"></div>
+    </div>
+
+   
+    <h4 id="sql"></h4>
+    <button class="but"></button>  
+    <!-- <button class='but'></button> -->
+    <!-- <button class='but'></button> -->
+
+    <div class="conteniner2">
+        <input class="in" type="text">
+        <input class="in1" type="text">
+        <input type="text"  class="ln2">
+    </div>
+
+    <script>
+ let txt =''
+ let txt1
+        for (let i = 0; i < `{% sigrze %}`; i++) {
+          txt = txt + `<h4 id="sql1">{% teqsti %} / NEW PART  {% teqsti1 %} 
+             /  PART    {% teqsti2 %}</h4>  <button id='but1'>delete</button> <button id='but2'>edit</button>`            
+        }
+        document.getElementById("sql").innerHTML=txt
+        // document.getElementById("but").innerHTML=txt
+        document.querySelector('.zieba').addEventListener('keypress',function(event){
+            if (event.key==="Enter"){
+                console.log(event.key)
+                txt1=document.querySelector('.zieba').value
+                console.log(txt1)                
+                document.querySelector('.link').href=document.querySelector('.zieba').value                
+                document.querySelector('.link').click()
+            }
+            
+        })
+
+    document.getElementById("but1").addEventListener('click',function(){
+        window.alert('delete')
+        document.querySelector('.link').href='delete'
+        document.querySelector('.link').click()
+        let insert_p=document.querySelector('.in').value
+        let insert_a_p=document.querySelector('.in1').value
+
+    }) 
+    document.getElementById("but2").addEventListener('click',function(){
+        window.alert('edit')
+        document.querySelector('.link').href='edit'
+        document.querySelector('.link').click()
+
+    })   
+
+    document.getElementById("sql1").addEventListener('click',function(){
+        // window.alert('{%test%}')
+        
+        document.querySelector('.in').value='{%okok%}'
+        document.querySelector('.in1').value='{%okkald%}'
+        // window.alert(document.querySelector('.in1').value)
+    //    '{%gadatana%}'= document.querySelector('.in1').innerHTML
+        
+
+    }) 
+
+    
+    </script>
+</body>
+</html>
